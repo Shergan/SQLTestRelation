@@ -18,7 +18,7 @@ public class StudentDao {
     }
 
     public StudentDao() throws SQLException {
-        connection = DriverManager.getConnection("jdbc:postgresql://127.0.0.1:5432/jdbc_sample", "postgres", "123456");
+        connection = DriverManager.getConnection("jdbc:postgresql://127.0.0.1:5432/jdbc", "postgres", "root");
         maybeCreateGroupsTable();
         maybeCreateStudentsTable();
     }
