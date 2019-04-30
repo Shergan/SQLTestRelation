@@ -27,7 +27,7 @@ public class StudentDao {
         try (Statement statement = connection.createStatement()) {
             statement.execute("CREATE TABLE IF NOT EXISTS students (\n" +
                     "_id uuid PRIMARY KEY,\n" +
-                    "name varchar(100)\n" +
+                    "name varchar(100),\n" +
                     "age int\n" +
                     ");");
         }
